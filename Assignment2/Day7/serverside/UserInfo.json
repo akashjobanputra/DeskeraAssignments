@@ -1,0 +1,17 @@
+{
+  "success" :"true",
+  "id":"id",
+  "data":{ 
+			"userid": "dungeonMasters",
+			"title": "Mr.",	
+			"fname": "John",
+			"lname": "Wick",
+			"dob": "1995-12-29",
+			"profession": "Student",
+			"email": "contact@example.com",
+			"phone": "9393939393",
+			"address": "Nashik, Maharashtra, India.",
+			"aboutMe": "Equivalent Exchange.",
+			"male": true
+	}
+}

@@ -1,0 +1,45 @@
+1) What is ExtJS ?
+=> A JS Framework which provides UI for building web apps for cross browser functionality.
+
+2) How does it work ?
+=> if we are using one model object at two - three places in UI, if we change the value at one place of UI we can see without even saving that change the value of model changes and so gets reflected in all the places in UI where ever the model is used. It makes developers effort much lesser and easier as no extra coding is required for binding data.
+
+3) Configuration
+
+4) Purpose of ext-all.js,ext-all-debug.js,ext-all.css, ext-base.js ?
+=> ext.js = This is the core file which contains all functionality to run the application.
+   ext-all.js = This file is used for production purpose mostly as it is much smaller than any other and has no comments in the file.
+   ext-all-debug.js = This is the unminified version of ext-all.js for debugging purpose.
+   ext-all-dev.js = This file is also unminified and is used for development purpose as it contains all the comments and console logs also to check any errors/issue.
+
+5) Class System
+=> Ext.define() is used for defining classes in Ext JS.
+   Syntax: Ext.define(class name, class members/properties, callback function);
+   Creating Objects:
+      Using new keyword: var productObj = new product();
+	  
+   Inheritance: Here our custom class StudentDetailsGrid is using basic features of Ext JS class GridPanel. 
+      Ext.define(studentApp.view.StudentDetailsGrid, {
+         extend : 'Ext.grid.GridPanel',
+         ...
+      });
+	
+**Project Structure:
+--src
+--resources
+----CSS files
+----Images
+--JavaScript
+----App Folder
+---------Controller - the control of application, the events listeners the most functionality of code. 
+-------------Contoller.js
+---------Model - 
+-------------Model.js
+---------Store
+-------------Store.js
+---------View
+-------------View.js
+---------Utils
+-------------Utils.js
+---------app.js
+--HTML files

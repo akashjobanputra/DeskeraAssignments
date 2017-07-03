@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<p>Looping through an array using a for in loop:</p>
+		<p id="demo"></p>
+		<script>
+			var myObj, i, x = "", y = "";
+			myObj = {
+				"name":"John",
+				"age":30,
+				"cars":[ "Ford", "BMW", "Fiat" ]
+			};
+			var carss = [ "Ford", "BMW", "Fiat" ];		//ARRAY
+			const myObj2 = {			//Nested Objects
+				"companyName" : "ABC Inc.",
+				"employees":[    		//array of objects
+					{"name":"Ram", "email":"ram@gmail.com", "age":23},    
+					{"name":"Shyam", "email":"shyam23@gmail.com", "age":28},  
+					{"name":"John", "email":"john@gmail.com", "age":33},    
+					{"name":"Bob", "email":"bob32@gmail.com", "age":41}]
+			};
+			for (i in carss) {
+				x += carss[i] + "<br>";
+			}
+			//empName = myObj2.employees[1].name;
+			for (i in myObj2.employees) {
+				y += myObj2.employees[i].name + "<br>";
+				//y += myObj2['employees'][i]['name'] + "<br>";		
+			}
+			document.getElementById("demo").innerHTML = y;
+			document.getElementById("demo").innerHTML += x;
+		</script>
+	</body>
+</html>

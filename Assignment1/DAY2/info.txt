@@ -1,0 +1,15 @@
+JSON Array:
+	Accessing nested data structure (Accessing Array in an Object).
+		Code at: ./JSONArray.html	(That sums up JSONObject too)
+		{
+			"cars":[ "Ford", "BMW", "Fiat" ]
+		}
+		
+JSON Object:
+	can store exponents too.
+	{  
+		"integer": 34,  
+		"fraction": .2145,  
+		"exponent": 6.61789e+0  
+	}
+	sample code in ./JSONArray.html

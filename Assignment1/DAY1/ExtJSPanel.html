@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-classic/resources/theme-classic-all_1.css" rel="stylesheet" />
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/classic/theme-classic/resources/theme-classic-all_2.css" rel="stylesheet" />
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/extjs/6.2.0/ext-all.js"></script>
+      <script type="text/javascript">
+         Ext.onReady(function() {
+         Ext.create('Ext.Panel', {
+            renderTo: 'helloWorldPanel',
+            height: 500,
+            width: 500,
+            title: 'Hello world',
+            html: '<h1>Hello World</h1>',
+            bodyStyle : {"background-color" : "rgb(10,100,150)"} 
+			//bodyStyle: "background-image: url(https://israel1356.files.wordpress.com/2012/05/images-4.jpg)"
+            });
+         });
+      </script>
+   </head>
+   <body>
+      <div id="helloWorldPanel"></div>
+   </body>
+</html>

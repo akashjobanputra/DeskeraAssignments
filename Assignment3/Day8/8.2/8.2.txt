@@ -1,0 +1,14 @@
+b. Difference between PreparedStatement, CallableStatement and Statement.
+	Statement:  -Mostly used to execute DDL & Static queries.
+				-Doesn't accept input parameters at runtime.
+				
+	PreparedStatement:  -Accepts input parameters at runtime.
+						-Better performance than Statement interface. As it they are precompiled and query plan is created only once, irrespective of how many times it is executed.
+						-Hence this is recommended when a query is to be executed multiple times.
+						
+	CallableStatement:  -Used to execute the stored procedures.
+						-3 types of parameters to stored procedures.
+							IN – used to pass the values to stored procedure.
+							OUT – used to hold the result returned by the stored procedure.
+							IN OUT – acts as both IN and OUT parameter.
+						-OUT parameters need to be registered before calling the stored procedure by using registerOutParameter() method of CallableStatement.

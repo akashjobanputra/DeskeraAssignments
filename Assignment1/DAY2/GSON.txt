@@ -1,0 +1,5 @@
++Gson:
+	A Java lib used to convert Java object to its JSON representation and vice-versa.
+	Supports Java Generics, conversion of third-party classes to json.
+	
+	(( http://www.studytrails.com/java/json/java-google-json-parse-json-to-java/ ))
